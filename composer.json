@@ -1,0 +1,17 @@
+{
+    "name": "veta/homework",
+    "description": "Homework_3 OOP",
+    "authors": [
+        {
+            "name": "el.trubetskaya",
+            "email": "el.trubetskaya@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Veta\\Homework\\": "src"
+        }
+    },
+    "require": {
+    }
+}
