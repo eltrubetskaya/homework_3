@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: elena
  * Date: 28.10.16
- * Time: 20:27
+ * Time: 20:27.
  */
 
 namespace Veta\Homework\Auth;
-
 
 class AuthInheritance extends Auth
 {
@@ -21,12 +20,12 @@ class AuthInheritance extends Auth
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function updateUser()
     {
-        if ($this->getUsername() != null){
-            echo 'User_update: ' . $this->getUsername() . "!\n";
+        if ($this->getUsername() != null) {
+            echo 'User_update: '.$this->getUsername()."!\n";
         }
     }
 }

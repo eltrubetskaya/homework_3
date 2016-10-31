@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: elena
  * Date: 28.10.16
- * Time: 15:00
+ * Time: 15:00.
  */
 
 namespace Veta\Homework\Auth;
-
 
 abstract class AbstractAuth
 {
@@ -36,26 +35,27 @@ abstract class AbstractAuth
      */
     public function getUsername()
     {
-        if($this->validatePassword() === true){
+        if ($this->validatePassword() === true) {
             return $this->username;
-        }else{
+        } else {
             return null;
         }
     }
 
     /**
      * @return false|true
+     *
      * @internal param string $this ->password
      */
     public function validatePassword()
     {
-        /**
+        /*
          * Validates password
          */
 
-        if($this->password){
+        if ($this->password) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

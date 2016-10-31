@@ -3,34 +3,33 @@
  * Created by PhpStorm.
  * User: elena
  * Date: 28.10.16
- * Time: 14:46
+ * Time: 14:46.
  */
 
 namespace Veta\Homework\Auth;
 
-
 class Auth extends AbstractAuth implements AuthInterface
 {
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function loginUser()
     {
-        /**
+        /*
          * Login User.
          */
 
-        if ($this->getUsername() != null){
-            echo 'User: ' . $this->getUsername() . '!';
+        if ($this->getUsername() != null) {
+            echo 'User: '.$this->getUsername().'!';
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
+     /**
+      * {@inheritdoc}
+      */
      public function logoutUser()
      {
-         /**
+         /*
           * Logs out user
           */
      }
@@ -40,7 +39,7 @@ class Auth extends AbstractAuth implements AuthInterface
      */
     public function findUserIdByUsername()
     {
-         /**
+        /*
          * Finds an user Id by Username.
          */
     }
