@@ -20,14 +20,21 @@ abstract class AbstractAuth
      */
     private $password;
 
+     /**
+     * @var string
+     */
+    private $rememberMe;
+
     /**
      * @param string $username
      * @param string $password
+     * @param bool $rememberMe
      */
-    public function __construct($username, $password)
+    public function __construct($username, $password, $rememberMe = true)
     {
         $this->username = $username;
         $this->password = $password;
+        $this->rememberMe = $rememberMe;
     }
 
     /**

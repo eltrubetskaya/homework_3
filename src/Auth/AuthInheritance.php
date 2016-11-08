@@ -10,22 +10,22 @@ namespace Veta\Homework\Auth;
 
 class AuthInheritance extends Auth
 {
-    /**
+    /**Param $rememberMe will required and $password will in format md5
      * @param string $username
      * @param string $password
+     * @param bool $rememberMe
      */
-    public function __construct($username, $password)
+    public function __construct($username, $password, $rememberMe = true)
     {
-        parent::__construct($username, $password);
+        parent::__construct($username, $this->formatPassword($password), $rememberMe);
     }
 
     /**
-     * {@inheritdoc}
+     * @param $password
+     * @return string
      */
-    public function updateUser()
+    public function formatPassword($password)
     {
-        if ($this->getUsername() != null) {
-            echo 'User_update: '.$this->getUsername()."!\n";
-        }
+        return md5($password);
     }
 }
